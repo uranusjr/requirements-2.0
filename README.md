@@ -21,14 +21,15 @@ project include:
   Python packages that need to be installed in the same environment as itself.
 * A Python script that `import`s third-party Python packages, that need to be
   installed in the Python environment to run it.
-
+* A Python virtual environment with specific versions of third-party packages
+  used to reproduce results in Jupyter notebooks.
 
 ### Dependency
 
 A prerequisite for a project to successfully run. This may be either a “direct”
 dependency, which the project directly references (e.g. by `import`), or
 “transitive” dependency, which is not directly referenced by a project, but
-stilled required because it is referenced by one of the project’s direct
+still required because it is referenced by one of the project’s direct
 dependencies or other transitive dependencies.
 
 
@@ -48,9 +49,9 @@ for a project.
 
 ### Specifying dependencies
 
-A top level key `dependencies` points to a mapping, which contains all
+Top-level key `dependencies` point to a mapping, which contain all
 dependencies of this project. Here is one example (nested contents skipped for
-bfrevity; they will be discussed in later sections):
+brevity; they will be discussed in later sections):
 
 ```json
 {
@@ -71,8 +72,8 @@ bfrevity; they will be discussed in later sections):
 ```
 
 Each key in the mapping is a string that identifies a dependency. The key does
-not hold any special meanings itself, but used to refer the dependency it maps
-to, and should be unique in the lock file.
+not hold any special meaning itself, but the key is used to refer the dependency it maps
+to and should be unique in the lock file.
 
 Four key patterns are reserved with special meanings by Python packaging:
 
@@ -205,7 +206,7 @@ be installed as an editable installation.
 
 One key `direct` is required, which points to a valid value specified by
 [PEP 440] direct references. This can be converted to a PEP 440 direct
-refenrence with
+reference with
 
 ```python
 def deserialize(dependency):
