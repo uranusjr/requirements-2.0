@@ -1,13 +1,13 @@
 {
     "dependencies": {
         "": {
-            "dependencies": [
-                "packaging",
-                "pip-tools"
-            ]
+            "dependencies": {
+                "packaging": null,
+                "pip-tools": null
+            }
         },
         "click": {
-            "dependencies": [],
+            "dependencies": {},
             "python": {
                 "name": "click",
                 "source": "pypi",
@@ -15,10 +15,10 @@
             }
         },
         "packaging": {
-            "dependencies": [
-                "pyparsing",
-                "six"
-            ],
+            "dependencies": {
+                "pyparsing": null,
+                "six": null
+            },
             "python": {
                 "name": "packaging",
                 "source": "pypi",
@@ -26,7 +26,7 @@
             }
         },
         "pip": {
-            "dependencies": [],
+            "dependencies": {},
             "python": {
                 "name": "pip",
                 "source": "pypi",
@@ -34,11 +34,11 @@
             }
         },
         "pip-tools": {
-            "dependencies": [
-                "click",
-                "pip",
-                "six"
-            ],
+            "dependencies": {
+                "click": null,
+                "pip": null,
+                "six": null
+            },
             "python": {
                 "name": "pip-tools",
                 "source": "pypi",
@@ -46,7 +46,7 @@
             }
         },
         "pyparsing": {
-            "dependencies": [],
+            "dependencies": {},
             "python": {
                 "name": "pyparsing",
                 "source": "pypi",
@@ -54,7 +54,7 @@
             }
         },
         "six": {
-            "dependencies": [],
+            "dependencies": {},
             "python": {
                 "name": "six",
                 "source": "pypi",
