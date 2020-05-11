@@ -276,7 +276,7 @@ specified in the lock file.
 
 ### Distribution validation
 
-A top-level key `hashes` contains values that can be used to validate
+A top-level key `validations` contains values that can be used to validate
 downloaded artifacts at install time.
 
 ```json
